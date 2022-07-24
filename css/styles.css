@@ -1,22 +1,35 @@
+:root {
+    --accent-color: #2196F3;
+    --main-text-color: #212121;
+    --seondary-text-color: #757575;
+    --main-font:'Roboto', sans-serif;
+    --secondary-font: 'Raleway', cursive;
+    --primary-white-color: #ffffff;
+}
+
 body {
+    font-family: var(--main-font);
+    background-color: var(--primary-white-color);
     /* color: #0000ff; */
 }
 
-.list-item {
-
-} 
-
-a {
+.link {
     text-decoration: none;
 }
 
+.list {
+    list-style: none;
+}
+
+/* Logo */
+
 .logo {
-    font-family: 'Raleway';
+    font-family: var(--secondary-font);
         font-weight: 700;
         font-size: 26px;
         line-height: 1.92;
         letter-spacing: 0.03em;
-        color: #2196F3;
+        color: var(--accent-color);
 }
 
 header {
@@ -29,4 +42,57 @@ header {
 
 .logo-light {
     color: #fff;
+}
+
+.site-nav-link {
+    
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: #212121;
+}
+
+.site-nav-link:hover, .site-nav-link:focus {
+    color: var(--accent-color); 
+}
+
+.current {
+    color-scheme: var(--accent-color);
+}
+
+.features-title {
+    color: var(--main-text-color);
+}
+
+.features-text .title {
+    color: var(--seondary-text-color);
+}
+
+/* Button */
+.button {
+    color: var(--main-text-color);
+    background-color: var(--primary-bg-color);
+}
+
+.button.primary {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
+
+/* Спрятанный заголовок */
+.visually-hidden {
+    position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+    }
+    
+
 }
