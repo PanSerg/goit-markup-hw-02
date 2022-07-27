@@ -71,7 +71,7 @@ header {
 .site-nav-link:hover,
 .site-nav-link:focus {
   color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  
   font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
@@ -81,28 +81,49 @@ header {
     color: #ffffff;
 }
 
-.site-contact {
-    color: var(--secondary-text-color);
+.contact {
+    font-family: 'Roboto';
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: var(--secondary-text-color);
 }
 
 .current {
   color: var(--accent-color);
 }
 
+.contact-mail {
+  color: var(--accent-color);
+}
+.contact-tel {
+  color: var(--secondary-text-color);
+}
+
+.feature-skills {
+  font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
 .features-title {
   color: var(--main-text-color);
 
   font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
 }
 
 .features-text .title {
-  color: var(--seondary-text-color);
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 14px;
@@ -131,12 +152,13 @@ header {
 
 .head {
   font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #757575;
 }
 
 /* Button */
@@ -192,6 +214,41 @@ header {
         letter-spacing: 0.03em;
         color: #757575;
 }
+
+/* Футер */
+
+.contact-footer {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.street {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.social-networks {
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+}
+
 
 /* Спрятанный заголовок */
 .visually-hidden {
