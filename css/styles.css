@@ -5,16 +5,15 @@
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', cursive;
   --primary-white-color: #ffffff;
+  --lable-color: #000000
+  
 }
 
 body {
+  font-family: 'Roboto';
+  font-style: normal;
   font-family: var(--main-font);
   background-color: var(--primary-white-color);
-  /* color: #0000ff; */
-}
-
-.logo {
-  text-decoration: none;
 }
 
 .link {
@@ -26,16 +25,28 @@ body {
 }
 
 .lable {
-    color: #757575;
+    color: var(--primary-white-color);
 }
 
 .pointer {
     cursor: pointer;
 }
 
+.head {
+     font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    background-color: #2F303A;;
+}
+
 /* Logo */
 
 .logo {
+  text-decoration: none;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -48,16 +59,12 @@ ul {
   list-style: none;
 }
 
-header {
-  background-color: antiquewhite;
-}
-
 .logo-dark {
-  color: #000;
+  color: var(--lable-color);
 }
 
 .logo-light {
-  color: #fff;
+  color: var(--primary-white-color);
 }
 
 .site-nav-link {
@@ -65,24 +72,15 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-text-color);
 }
 
 .site-nav-link:hover,
 .site-nav-link:focus {
-  color: var(--primary-white-color);
-  
-  font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #ffffff;
+  color: var(--accent-color);
 }
 
 .contact {
-    font-family: 'Roboto';
       font-weight: 500;
       font-size: 14px;
       line-height: 1.14;
@@ -94,71 +92,59 @@ header {
   color: var(--accent-color);
 }
 
-.contact-mail {
-  color: var(--accent-color);
-}
 .contact-tel {
   color: var(--secondary-text-color);
 }
 
 .feature-skills {
-  font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--main-text-color);
 }
 
 .features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--main-text-color);
-
-  font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
 }
 
 .features-text .title {
-  font-family: 'Roboto';
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 .name {
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-text-color);
 }
 
 .job-title {
-  font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 .head {
-  font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #757575;
+    color: var(--primary-white-color);
 }
 
 /* Button */
@@ -168,7 +154,6 @@ header {
 }
 
 .properties {
-  font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -176,7 +161,7 @@ header {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--primary-white-color);
 }
 
 .button.primary {
@@ -184,7 +169,6 @@ header {
   color: var(--primary-white-color);
     text-transform: uppercase;
     
-      font-family: 'Roboto';
       font-weight: 700;
       font-size: 16px;
       line-height: 1.88;
@@ -192,49 +176,47 @@ header {
       align-items: center;
       text-align: center;
       letter-spacing: 0.06em;
-      color: #FFFFFF;
+      color: var(--primary-white-color);
 }
 
 /* Наши преимущества */
 
 .themes {
-    font-family: 'Roboto';
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
-        color: #212121;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 0.06em;
+      color: var(--main-text-color);
 }
 
 .thems-text {
-    font-family: 'Roboto';
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.88;
-        letter-spacing: 0.03em;
-        color: #757575;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.88;
+      letter-spacing: 0.03em;
+      color: var(--secondary-text-color);
 }
 
 /* Футер */
 
 .contact-footer {
   font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .street {
-  font-family: 'Roboto';
+font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: var(--primary-white-color);
 }
 
 .social-networks {
@@ -248,7 +230,6 @@ header {
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
-
 
 /* Спрятанный заголовок */
 .visually-hidden {
